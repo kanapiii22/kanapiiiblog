@@ -1,0 +1,66 @@
+// CSS Variables
+:root {
+  --size: 4px;
+  --dimension-content-width: 1200px;
+}
+
+// Header Styles
+.blog-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.header-inner {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-icon {
+  width: 14%;
+  // height: 2%;
+  object-fit: fill;
+  object-position: center;
+  border-radius: calc(var(--size) * 0.5);
+  display: block;
+
+}
+
+// Main Content
+.main-content {
+  margin-top: calc(var(--size) * 15);
+  margin-bottom: calc(var(--size) * 15);
+  min-height: calc(100vh - calc(var(--size) * 30));
+  padding: calc(var(--size) * 3) 0;
+}
+
+// Footer
+.blog-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border-top: 1px solid #e5e7eb;
+  padding: calc(var(--size) * 3) 0;
+  z-index: 1000;
+}
+.footer-content {
+  max-width: var(--dimension-content-width);
+  margin: 0 auto;
+  padding: 0 calc(var(--size) * 4);
+  text-align: center;
+
+  p {
+    margin: 0;
+    color: rgb(238, 65, 143);
+    font-size: calc(var(--size) * 1.75);
+  }
+}
