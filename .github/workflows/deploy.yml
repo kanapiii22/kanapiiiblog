@@ -30,8 +30,8 @@ jobs:
       - name: Build
         run: npm run build:prod
 
-      - name: Copy CNAME for custom domain
-        run: cp public/CNAME dist/kanapiiiblog/browser/
+      # - name: Copy CNAME for custom domain
+      #   run: cp public/CNAME dist/kanapiiiblog/browser/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
