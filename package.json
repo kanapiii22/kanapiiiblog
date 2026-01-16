@@ -5,8 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:prod": "ng build --configuration production --base-href /kanapiiiblog/",
-    "build:gh-pages": "ng build --configuration production --output-path docs --base-href /kanapiiiblog/",
+    "build:prod": "ng build --configuration production --base-href /",
+    "build:gh-pages": "ng build --configuration production --output-path docs --base-href /",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:kanapiiiblog": "node dist/kanapiiiblog/server/server.mjs"
